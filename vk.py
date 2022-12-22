@@ -8,7 +8,7 @@ while True:
         vk = VkApi(token=vk_token)
         counted_friends = len(vk.method("friends.getOnline"))
 
-        delta = timedelta(hours=3, minutes=0)
+        delta = timedelta(hours=3)
         now_date = datetime.now(timezone.utc) + delta
         format_date, format_date_ege, format_minutes, format_hours = "%H:%M ● %d.%m.%Y", "%Y.%m.%d", "%M", "%H"
         
